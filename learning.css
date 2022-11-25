@@ -40,9 +40,16 @@ html {
 }
 
 .log img {
-    height: 16px;
-    width: 16px;
+    display: block;
+    height: 20px;
 }
+
+.log {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
