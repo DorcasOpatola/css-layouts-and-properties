@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%,
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*css reset border box and box sizing*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+/*learning.html styling*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 16px;
+}
+
+.log img {
+    height: 16px;
+    width: 16px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 8px;
+}
+
+.menu.li {
+    margin: 8px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: center;
+    gap: 36px;
+
+}
+
+.career div {
+    flex-grow: 1;
+}
