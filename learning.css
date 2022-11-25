@@ -1,29 +1,38 @@
-* {
-    margin: 0;
-}
-
-html, body {
-    height: 100%,
-}
-
 html {
     font-family: "Montserrat", sans-serif;
 }
 
 /*css reset border box and box sizing*/
+/* 1. Use a more-intuitive box-sizing model. */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*  3. Allow percentage-based heights in the application */
+html {
+    height: auto;
+}
 
 
-/*learning.html styling*/
+
+
+/* 
+    learning.html styling  
+*/
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 16px;
 }
 
 .logo {
@@ -38,11 +47,25 @@ html {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 8px;
+    gap: 16px;
+    align-items: center;
 }
 
-.menu.li {
-    margin: 8px;
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    color: rgb(73, 194, 224);
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .intro {
